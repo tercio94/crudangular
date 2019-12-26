@@ -1,4 +1,4 @@
-<h2>Você deseja remover este Usuário?</h2>
+<h2>Você deseja remover este Funcionário?</h2>
 
 <div *ngIf="user">
     <labeL>Id: <strong>{{user.id}}</strong> </labeL>
@@ -7,6 +7,6 @@
     <br><br>
     <label>Sobrenome: <strong>{{user.last_name}}</strong> </label>
     <br><br>
-    <button (click)="delete()">Confirmar?</button>
-    <button (click)="cancel()">Cancelar</button>
+    <button class= 'btn btn-info' (click)="delete()">Confirmar?</button>
+    <button class= 'btn btn-info' (click)="cancel()">Cancelar</button>
 </div>

@@ -2,47 +2,47 @@
 
 <div>
     <label>Nome:
-        <input placeholder="Insira o Nome" [(ngModel)]="request.nome">
+        <input class="form-control" placeholder="Insira o Nome" [(ngModel)]="request.nome">
     </label>
     <br><br>
     <label>Sobrenome:
-    <input placeholder="Insira o Sobrenome" [(ngModel)]="request.sobrenome">
+    <input class="form-control" placeholder="Insira o Sobrenome" [(ngModel)]="request.sobrenome">
     </label>
     <br><br>
     <label>Email:
-    <input placeholder="Insira o E-mail" [(ngModel)]="request.email">   
+    <input input class="form-control" placeholder="Insira o E-mail" [(ngModel)]="request.email">   
     </label>
     <br><br>  
     <label>Sexo:
-        <select sexo="select" [(ngModel)]="request.sexo">
+        <select class="form-control" sexo="select" [(ngModel)]="request.sexo">
             <option value="M">Masculino</option> 
             <option value="F" selected>Feminino</option>                              
           </select> 
         </label>
         <br><br>  
         <label>Estado:
-            <select estado="select" [(ngModel)]="request.estado">
+            <select class="form-control" estado="select" [(ngModel)]="request.estado">
                 <option value="PR">Paraná</option>                
                 <option value="SC" selected>Santa Catarina</option>                              
               </select>
               </label>
               <br><br>
         <label>Área de Formação:
-        <input placeholder="Insira a Sua Área de Formação" [(ngModel)]="request.formacao">
+        <input class="form-control" class="form-control" placeholder="Insira a Sua Formação" [(ngModel)]="request.formacao">
         </label> 
               <br><br>
               <label>Data:
-              <input placeholder="Insira a Data de Hoje" [(ngModel)]="request.data">                  
+              <input class="form-control" placeholder="Insira a Data de Hoje" [(ngModel)]="request.data">                  
             </label>
               <br><br>  
         <label>Profissão:
-            <select estado="select" [(ngModel)]="request.profissao">
+            <select class="form-control" profissao="select" [(ngModel)]="request.profissao">
                 <option value="Uber">Uber</option>                
                 <option value="Desenvolvedor" selected>Desenvolvedor</option>                              
               </select>           
               </label>
               <br><br>             
-    <button (click)="save()">Salvar</button>
+    <button class= 'btn btn-info' (click)="save()">Salvar</button>
 </div>
 
 <br><br>
