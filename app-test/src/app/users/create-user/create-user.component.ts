@@ -11,8 +11,15 @@ import { UsersService } from '../user.service';
 export class CreateUserComponent implements OnInit {
 
   request: RequestCreate = {
-    name: "",
-    job: ""
+    nome: "",
+    sobrenome: "",    
+    email: "",
+    job: "",
+    sexo: "",
+    estado: "",
+    data: "",
+    formacao: "",
+    profissao: ""   
   }
 
   response: ResponseCreate

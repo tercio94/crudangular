@@ -1,3 +1,5 @@
+import { EmailValidator } from '@angular/forms';
+
 // modelo para user
     export interface User {
         id: number;
@@ -16,15 +18,27 @@
     }
 // Modelos para a criação
     export interface RequestCreate {
-            name: string;
+            nome: string;
+            sobrenome: string;
+            email: string;
             job: string;
+            sexo: string;
+            estado: string;
+            data: string;
+            formacao: string;
+            profissao: string;           
     }
 
     export interface ResponseCreate {
-            name: string;
-            job: string;
-            id: string;
-            createdAt: Date;
+        nome: string;
+        sobrenome: string;
+        email: string;
+        job: string;
+        sexo: string;
+        estado: string;
+        data: string;
+        formacao: string;
+        profissao: string; 
     }
 
     // Modelos para o get User
