@@ -2,22 +2,59 @@
 
 <div>
     <label>Nome:
-        <input placeholder="Insira o Nome" [(ngModel)]="request.name">
+        <input placeholder="Insira o Nome" [(ngModel)]="request.nome">
     </label>
     <br><br>
-    <label>Profissão:
-    <input placeholder="Insira a profissão" [(ngModel)]="request.job">
+    <label>Sobrenome:
+    <input placeholder="Insira o Sobrenome" [(ngModel)]="request.sobrenome">
     </label>
     <br><br>
-    <button (click)="save()">Gravar</button>
+    <label>Email:
+    <input placeholder="Insira o E-mail" [(ngModel)]="request.email">   
+    </label>
+    <br><br>  
+    <label>Sexo:
+        <select sexo="select" [(ngModel)]="request.sexo">
+            <option value="M">Masculino</option> 
+            <option value="F" selected>Feminino</option>                              
+          </select> 
+        </label>
+        <br><br>  
+        <label>Estado:
+            <select estado="select" [(ngModel)]="request.estado">
+                <option value="PR">Paraná</option>                
+                <option value="SC" selected>Santa Catarina</option>                              
+              </select>
+              </label>
+              <br><br>
+        <label>Área de Formação:
+        <input placeholder="Insira a Sua Área de Formação" [(ngModel)]="request.formacao">
+        </label> 
+              <br><br>
+              <label>Data:
+              <input placeholder="Insira a Data de Hoje" [(ngModel)]="request.data">                  
+            </label>
+              <br><br>  
+        <label>Profissão:
+            <select estado="select" [(ngModel)]="request.profissao">
+                <option value="Uber">Uber</option>                
+                <option value="Desenvolvedor" selected>Desenvolvedor</option>                              
+              </select>           
+              </label>
+              <br><br>             
+    <button (click)="save()">Salvar</button>
 </div>
 
 <br><br>
 
 <div *ngIf="response">
     <h3>Criado com sucesso</h3>
-    <label>Nome: {{response.name}}</label><br>
-    <label>Profissão: {{response.job}}</label><br>
-    <label>Id: {{response.id}}</label><br>
-    <label>Criado em: {{response.createdAt}}</label>
+    <label>Nome: {{response.nome}}</label><br>
+    <label>Sobrenome: {{response.sobrenome}}</label><br>
+    <label>E-mail: {{response.email}}</label><br>
+    <label>Sexo: {{response.sexo}}</label><br>     
+    <label>Estado: {{response.estado}}</label><br> 
+    <label>Data: {{response.data}}</label><br>
+    <label>Formação: {{response.formacao}}</label><br>
+    <label>Profissão: {{response.profissao}}</label>     
 </div>
